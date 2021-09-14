@@ -61,12 +61,10 @@ end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
-  return false if s.length==0
-  if s='00'
-    p false
-  elsif
-    /^[10]*00$/.match(s) != nil
+  if s=='0'
+    return true
   end
+  /^[10]*00$/.match(s) != nil
 end
 
 # Part 3
